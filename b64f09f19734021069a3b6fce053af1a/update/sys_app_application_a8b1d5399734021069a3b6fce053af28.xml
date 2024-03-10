@@ -6,7 +6,7 @@
         <device_type>browser</device_type>
         <hint>App to help users plan and organize their meals efficiently</hint>
         <name/>
-        <order/>
+        <order>200</order>
         <roles>x_62500_mealplan.admin,x_62500_mealplan.reader,x_62500_mealplan.writer</roles>
         <sys_class_name>sys_app_application</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -14,7 +14,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a8b1d5399734021069a3b6fce053af28</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Meal Planner</sys_name>
         <sys_overrides/>
         <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
@@ -22,7 +22,7 @@
         <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
         <sys_update_name>sys_app_application_a8b1d5399734021069a3b6fce053af28</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-03-08 03:41:04</sys_updated_on>
+        <sys_updated_on>2024-03-10 22:59:51</sys_updated_on>
         <title>Meal Planner</title>
         <view_name/>
     </sys_app_application>
