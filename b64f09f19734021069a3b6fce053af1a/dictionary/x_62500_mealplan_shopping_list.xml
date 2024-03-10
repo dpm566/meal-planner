@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="b13c53a69730021069a3b6fce053af8c" label="Shopping List" max_length="40" name="x_62500_mealplan_shopping_list" type="collection">
+        <element label="Bulk Buy" max_length="40" name="bulk_buy" type="boolean"/>
+        <element label="Ingredient" max_length="32" name="ingredient" reference="x_62500_mealplan_ingredient" type="reference"/>
+        <element label="Meal Plan" max_length="32" name="meal_plan" reference="x_62500_mealplan_meal_plan" type="reference"/>
+        <element label="Preferred Store" max_length="32" name="preferred_store" reference="x_62500_mealplan_ingredient_store" type="reference"/>
+        <element label="Skip" max_length="40" name="skip" type="boolean"/>
+        <element label="Used in Recipes" max_length="4000" name="used_in_recipes" reference="x_62500_mealplan_recipe" type="glide_list"/>
+        <index name="index">
+            <element name="ingredient"/>
+        </index>
+        <index name="index2">
+            <element name="meal_plan"/>
+        </index>
+        <index name="index3">
+            <element name="preferred_store"/>
+        </index>
+    </element>
+</database>
