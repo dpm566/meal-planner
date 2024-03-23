@@ -3,6 +3,7 @@
         <element label="Active" max_length="40" name="active" type="boolean"/>
         <element label="Cooking Instructions" max_length="4000" name="cooking_instructions" type="string"/>
         <element label="Effort" max_length="32" name="effort" reference="x_62500_mealplan_recipe_effort" type="reference"/>
+        <element label="Image" max_length="255" name="image" type="user_image"/>
         <element label="Ingredients" max_length="4000" name="ingredients" reference="x_62500_mealplan_ingredient" type="glide_list"/>
         <element display="true" label="Name" max_length="100" name="name" type="string"/>
         <element label="Prep Instructions" max_length="4000" name="prep_instructions" type="string"/>
