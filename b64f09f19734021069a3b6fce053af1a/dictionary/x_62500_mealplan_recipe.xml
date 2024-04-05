@@ -6,12 +6,17 @@
         <element label="Image" max_length="255" name="image" type="user_image"/>
         <element label="Ingredients" max_length="4000" name="ingredients" reference="x_62500_mealplan_ingredient" type="glide_list"/>
         <element display="true" label="Name" max_length="100" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Nutrition" max_length="1000" name="nutrition" type="string"/>
+        <element attributes="encode_utf8=false" label="Owned By" max_length="32" name="owned_by" reference="sys_user" type="reference"/>
         <element label="Prep Instructions" max_length="4000" name="prep_instructions" type="string"/>
         <element label="Is Prep Required ?" max_length="40" name="prep_required" type="boolean"/>
         <element label="Can Pre Cook ?" max_length="40" name="pre_cook" type="boolean"/>
         <element label="Time of Day" max_length="4000" name="time_of_day" reference="x_62500_mealplan_time_of_day" type="glide_list"/>
         <index name="index">
             <element name="effort"/>
+        </index>
+        <index name="index2">
+            <element name="owned_by"/>
         </index>
     </element>
 </database>
