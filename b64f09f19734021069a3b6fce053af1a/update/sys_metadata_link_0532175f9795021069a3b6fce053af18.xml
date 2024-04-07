@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>fc91d71f9795021069a3b6fce053af68</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_62500_mealplan_recipe">
+    <x_62500_mealplan_recipe action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <cook_time/>
+        <cooking_instructions>1. Marinate chicken thighs in yogurt, minced garlic, minced ginger, chopped green chili, biryani masala, turmeric powder, salt, and pepper for at least 1 hour. 2. Soak basmati rice in water for 30 minutes, then drain. 3. Heat olive oil in a large pot over medium heat. 4. Add sliced onion and cook until golden brown. 5. Add marinated chicken and cook until browned. 6. Stir in chopped tomato and cook until softened. 7. Layer half of the soaked rice over the chicken mixture. 8. Sprinkle saffron-infused milk over the rice. 9. Layer the remaining rice over the saffron-infused rice. 10. Cover and cook on low heat for 20-25 minutes, until rice is cooked through. 11. Garnish with fresh coriander and serve hot.</cooking_instructions>
+        <cuisine display_value="Indian">8f495a179791021069a3b6fce053afcf</cuisine>
+        <diet/>
+        <effort/>
+        <image/>
+        <ingredients>Chicken Thighs (500g, boneless and skinl</ingredients>
+        <meal_type display_value="Dinner">ca8516df9751021069a3b6fce053afdf</meal_type>
+        <name>Chicken Biryani</name>
+        <nutrition>Calories: 450, Protein: 30g, Fat: 20g, Carbs: 35g</nutrition>
+        <owned_by/>
+        <pre_cook>false</pre_cook>
+        <prep_instructions>1. Slice onion. 2. Chop tomato, garlic, ginger, and green chili. 3. Soak basmati rice.</prep_instructions>
+        <prep_required>false</prep_required>
+        <prep_time/>
+        <serving>2</serving>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 01:22:04</sys_created_on>
+        <sys_id>fc91d71f9795021069a3b6fce053af68</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-07 01:22:04</sys_updated_on>
+        <time_of_day/>
+    </x_62500_mealplan_recipe>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 01:24:49</sys_created_on>
+        <sys_id>0532175f9795021069a3b6fce053af18</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Chicken Biryani</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>sys_metadata_link_0532175f9795021069a3b6fce053af18</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-07 01:24:49</sys_updated_on>
+        <tablename>x_62500_mealplan_recipe</tablename>
+    </sys_metadata_link>
+</record_update>

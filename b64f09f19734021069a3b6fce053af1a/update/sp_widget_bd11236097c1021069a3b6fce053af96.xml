@@ -130,7 +130,7 @@
 }&#13;
 &#13;
 #card-list-widget-body {&#13;
-  width: 236px;&#13;
+  width: 300px;&#13;
 }&#13;
 .wrap {&#13;
   #card-list-widget-body {&#13;
@@ -246,6 +246,8 @@
         var includedRecipesGR = new GlideRecord("x_62500_mealplan_recipe");
         //    includedRecipesGR.addQuery("meal_plan", mealPlan);
         //  includedRecipesGR.addNotNullQuery("recipe");
+		includedRecipesGR.orderByDesc("sys_updated_on");
+		includedRecipesGR.setLimit(2);
         includedRecipesGR.query();
         while (includedRecipesGR.next()) {
             recipes.push({"sys_id":includedRecipesGR.getValue("sys_id")});
@@ -262,14 +264,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-03-17 03:10:52</sys_created_on>
         <sys_id>bd11236097c1021069a3b6fce053af96</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>Meal Planner Display Recipes</sys_name>
         <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
         <sys_update_name>sp_widget_bd11236097c1021069a3b6fce053af96</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-03-17 04:03:39</sys_updated_on>
+        <sys_updated_on>2024-04-07 02:25:12</sys_updated_on>
         <template><![CDATA[<div id="recommendations-dashboard-section" class="recommendations-dashboard-section panel panel-default b panel-wrapper instance-{{c.data.instanceId}}" ng-if = "(c.data.widgetsData.length > 0 && c.data.instanceId.length > 0) || data.showEmptyState === 'true'" ng-class="(c.data.listType === 'simple-link' || c.data.cardType === 'wrap') || (data.showEmptyState === 'true' && (c.data.widgetsData.length === 0 || c.data.instanceId.length === 0)) ? '': 'recommended-card-section'">
   <div class="panel-heading b-b">
     <h3 class="panel-title">
