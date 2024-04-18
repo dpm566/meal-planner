@@ -5,20 +5,20 @@
         <format>JPEG</format>
         <height>455</height>
         <image>432b0a229741021069a3b6fce053afe1</image>
-        <name>x_62500_mealplan.recipe_placeholder.jpg</name>
+        <name>x_62500_mealplan.recipe_placeholder_previous.jpg</name>
         <size_bytes>188284</size_bytes>
         <sys_class_name>db_image</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-03-23 02:03:05</sys_created_on>
         <sys_id>680b0ee29741021069a3b6fce053af80</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>x_62500_mealplan.recipe_placeholder.jpg</sys_name>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>x_62500_mealplan.recipe_placeholder_previous.jpg</sys_name>
         <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
         <sys_update_name>db_image_680b0ee29741021069a3b6fce053af80</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-03-23 02:03:20</sys_updated_on>
+        <sys_updated_on>2024-04-08 21:27:53</sys_updated_on>
         <thumbnail/>
         <width>1120</width>
     </db_image>

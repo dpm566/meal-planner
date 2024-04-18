@@ -344,7 +344,7 @@ a:focus {&#13;
         <id>mp-content-card-v2</id>
         <internal>false</internal>
         <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
-        <name>Meal Planner Content Card V2</name>
+        <name>Meal Planner - Content Card V2</name>
         <option_schema/>
         <public>false</public>
         <roles/>
@@ -367,14 +367,14 @@ a:focus {&#13;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-05 07:55:33</sys_created_on>
         <sys_id>4178de3a97d5021069a3b6fce053afbd</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>Meal Planner Content Card V2</sys_name>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Meal Planner - Content Card V2</sys_name>
         <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
         <sys_update_name>sp_widget_4178de3a97d5021069a3b6fce053afbd</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-05 08:10:54</sys_updated_on>
+        <sys_updated_on>2024-04-18 07:01:41</sys_updated_on>
         <template><![CDATA[<a ng-href="{{::c.url}}" tabindex="-1" ng-if="c.viewType == 'simple_link'" ng-attr-target="{{::c.target}}">
   <div class="simple-link-container">
     <div class="flexbox simple-header-container">

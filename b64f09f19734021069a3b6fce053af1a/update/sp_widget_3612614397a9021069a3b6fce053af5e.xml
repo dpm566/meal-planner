@@ -3,7 +3,7 @@
         <category>custom</category>
         <client_script><![CDATA[api.controller = function($window, $location, snAnalytics, recentlyViewedFavorites) {
     var c = this;
-	
+
     c.isValidLocalDate = function(dateString) {
         var localDateTimeFormat = g_user_date_time_format;
         return getDateFromFormat(dateString, localDateTimeFormat) !== 0;
@@ -47,6 +47,10 @@
         c.type = cardData.type;
         c.isFeatured = cardData.isFeatured;
         c.image = cardData.image;
+		c.recipeAllocationSysID = cardData.recipeAllocationSysID;
+        c.showRecipesAction = cardData.showRecipesAction;
+        c.showAddAction = cardData.showAddAction;
+        c.showRemoveAction = cardData.showRemoveAction;
         c.title = (cardData.title ? cardData.title : ' ').replaceAll('highlight>', 'mark>');
         c.tooltipTitle = (cardData.title ? cardData.title : ' ').replace(/<\/highlight>/g, '').replace(/<highlight>/g, ''),
             c.description = (cardData.description ? cardData.description : '').replaceAll('highlight>', 'mark>');
@@ -85,6 +89,9 @@ $mobile-badge-font-size: 13px;&#13;
   height: 100%;&#13;
   display: block;&#13;
   border-radius: 0.4rem;&#13;
+}&#13;
+.additional-info-item-details-container{&#13;
+margin-right: 24px;&#13;
 }&#13;
 &#13;
 .mesp-favorite .fa {&#13;
@@ -229,26 +236,32 @@ $mobile-badge-font-size: 13px;&#13;
 &#13;
 .item-image {&#13;
   min-width: 70px;&#13;
-  height: 70px;&#13;
+  /*height: 70px;*/&#13;
   border-radius: 5px;&#13;
   align-self: flex-start;&#13;
   margin-right: 1rem;&#13;
+  max-height: 100px;&#13;
+max-width:100px;&#13;
 }&#13;
 &#13;
 .card-text-container {&#13;
   display: flex;&#13;
+}&#13;
+&#13;
+.card-title{&#13;
   flex-flow: column nowrap;&#13;
-  align-items: flex-start;&#13;
-  justify-content: space-evenly;&#13;
-  word-break: break-word;&#13;
+}&#13;
+&#13;
+.card-additonal-info{&#13;
+  flex-flow: row nowrap;&#13;
 }&#13;
 &#13;
 .item-title {&#13;
   min-height: 20px;&#13;
   color: $text-primary;&#13;
-  font-size: $font-size-base;&#13;
+  font-size: 18px;&#13;
   font-weight: 600;&#13;
-  margin-bottom: $sp-space--sm;&#13;
+ /* margin-bottom: $sp-space--sm;*/&#13;
 }&#13;
 &#13;
 .item-description {&#13;
@@ -256,7 +269,7 @@ $mobile-badge-font-size: 13px;&#13;
   color: $text-tertiary;&#13;
   font-size: $font-size-xs;&#13;
   font-weight: normal;&#13;
-  margin-bottom: $sp-space--sm;&#13;
+ /* margin-bottom: $sp-space--sm;*/&#13;
 }&#13;
 &#13;
 .item-additional-info {&#13;
@@ -264,6 +277,19 @@ $mobile-badge-font-size: 13px;&#13;
   font-size: $font-size-xs;&#13;
   font-weight: 600;&#13;
   line-height: normal;&#13;
+}&#13;
+&#13;
+.additional-info-item-label{&#13;
+    line-height: 5px;&#13;
+    color: #616c71;&#13;
+  font-size: 12px;&#13;
+}&#13;
+&#13;
+.additional-info-item-value{&#13;
+font-size: 12px;&#13;
+    margin-top: 6px;&#13;
+    color: #3a474e;&#13;
+  font-weight: 600;&#13;
 }&#13;
 &#13;
 .text-ellipsis {&#13;
@@ -313,6 +339,11 @@ a:focus {&#13;
 &#13;
 .aria-labelled-by-hidden {&#13;
   display: none;&#13;
+}&#13;
+&#13;
+.flex-container {&#13;
+  display: flex;&#13;
+  flex-direction: row;&#13;
 }</css>
         <data_table>sp_instance</data_table>
         <demo_data>{"options":&#13;
@@ -335,44 +366,48 @@ a:focus {&#13;
     }&#13;
 }&#13;
 </demo_data>
-        <description/>
+        <description>Added recipes to a meal plan</description>
         <docs/>
         <field_list/>
         <has_preview>true</has_preview>
-        <id>mp-content-card</id>
+        <id>mp-content-card-v4</id>
         <internal>false</internal>
         <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
-        <name>Meal Planner - Content Card</name>
+        <name>Meal Planner - Content Card V4</name>
         <option_schema/>
         <public>false</public>
         <roles/>
         <script><![CDATA[(function() {
-	
-	/* View Types are
-	- simple_link
-	- card
-	*/
+
+    /* View Types are
+    - simple_link
+    - card
+    */
     data.content = options;
     data.isMobileApp = $sp.getParameter('view') === 'mobile';
-    // data.favoriteWidget = $sp.getWidget('ec_favorite', {
-    //     'table': data.content.table,
-    //     'sys_id': data.content.sysId,
-	// 	'common_page' : true
-    // });
+    if (data.content.showRecipesAction) {
+        data.recipeActionWidget = $sp.getWidget('mp-recipe-actions', {
+            'table': data.content.table,
+            'sys_id': data.content.sysId,
+            'recipeAllocationSysID': data.content.recipeAllocationSysID,
+            'showAddAction': data.content.showAddAction,
+            'showRemoveAction': data.content.showRemoveAction
+        });
+    }
 })();]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-03-17 01:11:20</sys_created_on>
-        <sys_id>e6b543ec9701021069a3b6fce053af5c</sys_id>
-        <sys_mod_count>37</sys_mod_count>
-        <sys_name>Meal Planner - Content Card</sys_name>
+        <sys_created_on>2024-04-18 08:52:15</sys_created_on>
+        <sys_id>3612614397a9021069a3b6fce053af5e</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Meal Planner - Content Card V4</sys_name>
         <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
-        <sys_update_name>sp_widget_e6b543ec9701021069a3b6fce053af5c</sys_update_name>
+        <sys_update_name>sp_widget_3612614397a9021069a3b6fce053af5e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-18 07:01:53</sys_updated_on>
+        <sys_updated_on>2024-04-18 09:50:00</sys_updated_on>
         <template><![CDATA[<a ng-href="{{::c.url}}" tabindex="-1" ng-if="c.viewType == 'simple_link'" ng-attr-target="{{::c.target}}">
   <div class="simple-link-container">
     <div class="flexbox simple-header-container">
@@ -385,16 +420,21 @@ a:focus {&#13;
 </a>
 <span id="aria_label_{{::c.sysId}}" class="aria-labelled-by-hidden">{{::c.ariaLabel}}</span>
 <a class="content-card-container" ng-class="data.isMobileApp? 'content-card-mobile': 'content-card'" ng-if="c.viewType === 'card'" ng-click="c.redirect($event)" ng-href="{{::c.url}}"  aria-labelledby="count_{{::c.sysId}} aria_label_{{::c.sysId}}" ondragstart="return false;" ondrop="return false;" ng-attr-target="{{::c.target}}">
-  <div class="flexbox header-container">
+  <div class="flexbox header-container" ng-hide="true">
     <div class="card-badge"> 
       <i class="{{c.iconClass}} card-icon" aria-hidden="true"></i>
       <span class="type-padding">{{::c.type}}</span>
     </div>
   </div>
-  <div>
+  
+  <div class="flex-container">
+  
     <div class="card-image-container"  ng-class="{image: c.image}">
       <img ng-if="c.image" class="item-image" aria-hidden="true" ng-src="{{c.image}}" />
-      <div class="card-text-container">
+    </div>
+    
+     <div class="card-text-container card-title">
+       
         <div ec-multiline-ellipsis-tooltip ec-ellipsis-tooltip-title="{{::c.tooltipTitle}}"
           class="item-title text-ellipsis text-ellipsis-two-line">
           <span ng-bind-html="c.title"></span>
@@ -402,23 +442,27 @@ a:focus {&#13;
         <div class="item-description text-ellipsis text-ellipsis-two-line">
           <span ng-bind-html="c.description"></span>
         </div>
-        <div ng-if="c.additionalInfoIsDate" class="item-additional-info text-ellipsis text-ellipsis-one-line">
+    
+    
+      <div class="card-text-container card-additonal-info">
+      <!--  <div ng-if="c.additionalInfoIsDate" class="item-additional-info text-ellipsis text-ellipsis-one-line">
           <sn-day-ago date="c.additionalInfo"></sn-day-ago>
         </div>
         <div ng-if="!c.additionalInfoIsDate">
           <span ec-multiline-ellipsis-tooltip ec-ellipsis-tooltip-title="{{::c.additionalInfo}}" class="item-additional-info text-ellipsis text-ellipsis-one-line">{{::c.additionalInfo}}</span>
-        </div>
+        </div>-->
+        <div ng-repeat="additionalInfo in c.additionalInfo" class="additional-info-item-details-container">
+          <div class="additional-info-item-label">{{additionalInfo.key}}</div>
+          <div class="additional-info-item-value">{{additionalInfo.value}}</div>
+          </div>
       </div>
+   
+  </div>
+    
+   <div class="recipe-action-widget" ng-if="c.showRecipesAction"><sp-widget widget="data.recipeActionWidget"></sp-widget></div>
+    
     </div>
-  </div>
 </a>
-<div class="auto-margin-left" ng-class="{'auto-margin-left-mobile': data.isMobileApp}" ng-if="c.viewType === 'card'">
-  <div ng-if="c.isFeatured" class="feature-badge">
-    <span>${Featured}</span> 
-  </div>
-  <div ng-class="{'mesp-favorite': data.isMobileApp}" class="favorite-widget-container">
-    <sp-widget widget="data.favoriteWidget"></sp-widget>
-  </div>
-</div>]]></template>
+]]></template>
     </sp_widget>
 </record_update>
