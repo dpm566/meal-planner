@@ -383,28 +383,22 @@ a:focus {&#13;
     data.content = options;
     data.isMobileApp = $sp.getParameter('view') === 'mobile';
     if (data.content.showRecipesAction) {
-    data.recipeActionWidget = $sp.getWidget('mp-recipe-actions', {
-        'table': data.content.table,
-        'sys_id': data.content.sysId,
-		'recipeAllocationSysID': data.content.recipeAllocationSysID,
-        'showAddAction': data.content.showAddAction,
-        'showRemoveAction': data.content.showRemoveAction
-    });
-}
+        data.recipeActionWidget = $sp.getWidget('mp-recipe-actions', options);
+    }
 })();]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-04-07 01:26:48</sys_created_on>
         <sys_id>d2a21b9f9795021069a3b6fce053af06</sys_id>
-        <sys_mod_count>31</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_name>Meal Planner - Content Card V3</sys_name>
         <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
         <sys_update_name>sp_widget_d2a21b9f9795021069a3b6fce053af06</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-18 09:54:12</sys_updated_on>
+        <sys_updated_on>2024-04-19 05:48:47</sys_updated_on>
         <template><![CDATA[<a ng-href="{{::c.url}}" tabindex="-1" ng-if="c.viewType == 'simple_link'" ng-attr-target="{{::c.target}}">
   <div class="simple-link-container">
     <div class="flexbox simple-header-container">
