@@ -4,7 +4,7 @@
         <element label="Cooking Instructions" max_length="4000" name="cooking_instructions" type="string"/>
         <element label="Cook Time" max_length="40" name="cook_time" type="glide_duration"/>
         <element attributes="encode_utf8=false" label="Cuisine" max_length="32" name="cuisine" reference="x_62500_mealplan_cuisine" type="reference"/>
-        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Diet" max_length="1024" name="diet" reference="x_62500_mealplan_diet" type="glide_list"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true,can_group=true" label="Diet" max_length="1024" name="diet" reference="x_62500_mealplan_diet" type="glide_list"/>
         <element label="Effort" max_length="32" name="effort" reference="x_62500_mealplan_recipe_effort" type="reference"/>
         <element label="Image" max_length="255" name="image" type="user_image"/>
         <element label="Ingredients" max_length="4000" name="ingredients" type="string"/>
