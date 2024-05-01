@@ -26,7 +26,7 @@
                 <element inactive_on_update="false" label="6" sequence="5" value="6"/>
             </choice>
         </element>
-        <element label="Time of Day" max_length="4000" name="time_of_day" reference="x_62500_mealplan_time_of_day" type="glide_list"/>
+        <element label="Time of Day (Legacy)" max_length="4000" name="time_of_day" reference="x_62500_mealplan_time_of_day" type="glide_list"/>
         <index name="index">
             <element name="cuisine"/>
         </index>

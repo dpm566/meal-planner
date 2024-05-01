@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
-        <active>false</active>
+        <active>true</active>
         <application display_value="Meal Planner">a8b1d5399734021069a3b6fce053af28</application>
         <assessment/>
         <device_type/>
@@ -8,34 +8,34 @@
         <hint/>
         <homepage/>
         <image/>
-        <link_type>LIST</link_type>
+        <link_type>SEPARATOR</link_type>
         <map_page/>
-        <mobile_title>All</mobile_title>
+        <mobile_title>Administration</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
-        <name>x_62500_mealplan_ingredient_store</name>
-        <order/>
+        <name/>
+        <order>1000</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
         <require_confirmation>true</require_confirmation>
-        <roles>x_62500_mealplan.reader</roles>
+        <roles/>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-03-08 03:41:04</sys_created_on>
+        <sys_created_on>2024-05-01 05:12:53</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>2cb199799734021069a3b6fce053af6f</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>Ingredient Stores</sys_name>
+        <sys_id>1e4cef4397f5021069a3b6fce053af2a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Administration</sys_name>
         <sys_overrides/>
         <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
-        <sys_update_name>sys_app_module_2cb199799734021069a3b6fce053af6f</sys_update_name>
+        <sys_update_name>sys_app_module_1e4cef4397f5021069a3b6fce053af2a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-04-20 07:14:22</sys_updated_on>
+        <sys_updated_on>2024-05-01 05:12:53</sys_updated_on>
         <timeline_page/>
-        <title>Ingredient Stores</title>
+        <title>Administration</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>
