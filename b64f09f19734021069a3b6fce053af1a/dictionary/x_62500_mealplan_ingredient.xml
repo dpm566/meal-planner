@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="cbbb7db197f4021069a3b6fce053afb4" label="Ingredient" max_length="40" name="x_62500_mealplan_ingredient" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Bulk Buy" max_length="40" name="bulk_buy" type="boolean"/>
+        <element display="true" label="Name" max_length="200" name="name" type="string"/>
+        <element label="Preferred Store (Legacy)" max_length="32" name="preferred_store" reference="x_62500_mealplan_ingredient_store" type="reference"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true,can_group=true" label="Used in Cuisine" max_length="1024" name="used_in_cuisine" reference="x_62500_mealplan_cuisine" type="glide_list"/>
+        <index name="index">
+            <element name="preferred_store"/>
+        </index>
+    </element>
+</database>

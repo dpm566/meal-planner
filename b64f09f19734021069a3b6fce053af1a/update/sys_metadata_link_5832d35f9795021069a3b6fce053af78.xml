@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>3091d71f9795021069a3b6fce053afe3</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_62500_mealplan_recipe">
+    <x_62500_mealplan_recipe action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <cook_time/>
+        <cooking_instructions>1. Heat vegetable oil in a pot over medium heat. 2. Add green curry paste and cook until fragrant. 3. Stir in coconut milk and bring to a simmer. 4. Add sliced chicken thighs and cook until almost done. 5. Add diced eggplant, sliced bell pepper, and bamboo shoots. 6. Simmer until chicken is cooked through and vegetables are tender. 7. Season with fish sauce and brown sugar. 8. Stir in Thai basil leaves. 9. Serve hot, garnished with sliced lime.</cooking_instructions>
+        <cuisine display_value="Thai">8b495a179791021069a3b6fce053afd0</cuisine>
+        <diet/>
+        <effort display_value="Moderate">bee0a76e9730021069a3b6fce053af3e</effort>
+        <image/>
+        <ingredients>Chicken Thighs (500g, boneless and skinl</ingredients>
+        <meal_type display_value="Dinner">ca8516df9751021069a3b6fce053afdf</meal_type>
+        <name>Green Curry Chicken</name>
+        <nutrition>Calories: 450, Protein: 25g, Fat: 30g, Carbs: 15g</nutrition>
+        <owned_by/>
+        <pre_cook>false</pre_cook>
+        <prep_instructions>1. Slice chicken thighs. 2. Dice eggplant. 3. Slice bell pepper. 4. Prepare bamboo shoots.</prep_instructions>
+        <prep_required>false</prep_required>
+        <prep_time/>
+        <serving>2</serving>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 01:22:04</sys_created_on>
+        <sys_id>3091d71f9795021069a3b6fce053afe3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-07 01:22:04</sys_updated_on>
+        <time_of_day/>
+    </x_62500_mealplan_recipe>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 01:24:46</sys_created_on>
+        <sys_id>5832d35f9795021069a3b6fce053af78</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Green Curry Chicken</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>sys_metadata_link_5832d35f9795021069a3b6fce053af78</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-07 01:24:46</sys_updated_on>
+        <tablename>x_62500_mealplan_recipe</tablename>
+    </sys_metadata_link>
+</record_update>

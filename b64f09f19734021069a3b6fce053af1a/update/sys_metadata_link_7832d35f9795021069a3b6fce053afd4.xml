@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>b491d71f9795021069a3b6fce053af69</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_62500_mealplan_recipe">
+    <x_62500_mealplan_recipe action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <cook_time/>
+        <cooking_instructions>1. Heat olive oil in a pan over medium heat. 2. Add chopped onion, minced garlic, minced ginger, and chopped green chili. Cook until onions are translucent. 3. Add chopped tomatoes and cook until soft. 4. Stir in garam masala, turmeric powder, cumin powder, and coriander powder. Cook for 2-3 minutes. 5. Add drained chickpeas and stir to combine. 6. Cook for 10-15 minutes, until flavors are well blended. 7. Stir in lemon juice and season with salt and pepper. 8. Garnish with fresh coriander and serve hot with rice or naan.</cooking_instructions>
+        <cuisine display_value="Indian">8f495a179791021069a3b6fce053afcf</cuisine>
+        <diet>42c1c6979711021069a3b6fce053af94</diet>
+        <effort display_value="Easy">fae0a76e9730021069a3b6fce053af3e</effort>
+        <image/>
+        <ingredients>Chickpeas (2 cans, drained and rinsed), </ingredients>
+        <meal_type display_value="Dinner">ca8516df9751021069a3b6fce053afdf</meal_type>
+        <name>Chana Masala</name>
+        <nutrition>Calories: 300, Protein: 15g, Fat: 10g, Carbs: 40g</nutrition>
+        <owned_by/>
+        <pre_cook>false</pre_cook>
+        <prep_instructions>1. Chop onion, tomato, garlic, ginger, and green chili. 2. Drain and rinse chickpeas.</prep_instructions>
+        <prep_required>false</prep_required>
+        <prep_time/>
+        <serving>2</serving>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 01:22:04</sys_created_on>
+        <sys_id>b491d71f9795021069a3b6fce053af69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-07 01:22:04</sys_updated_on>
+        <time_of_day/>
+    </x_62500_mealplan_recipe>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 01:24:48</sys_created_on>
+        <sys_id>7832d35f9795021069a3b6fce053afd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Chana Masala</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>sys_metadata_link_7832d35f9795021069a3b6fce053afd4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-07 01:24:48</sys_updated_on>
+        <tablename>x_62500_mealplan_recipe</tablename>
+    </sys_metadata_link>
+</record_update>

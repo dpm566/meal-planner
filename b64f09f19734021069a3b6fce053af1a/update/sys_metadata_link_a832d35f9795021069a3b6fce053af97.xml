@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>3c91d71f9795021069a3b6fce053afe5</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_62500_mealplan_recipe">
+    <x_62500_mealplan_recipe action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <cook_time/>
+        <cooking_instructions>1. Rinse soaked sticky rice and drain well. 2. Steam sticky rice for 25-30 minutes, or until tender and cooked through. 3. In a saucepan, heat coconut milk over medium heat. Stir in sugar and salt until dissolved. 4. Place steamed sticky rice in a bowl and pour sweetened coconut milk over it. Let it sit for 10 minutes to allow the rice to absorb the coconut milk. 5. Serve sticky rice with sliced ripe mangoes. 6. Garnish with toasted sesame seeds.</cooking_instructions>
+        <cuisine display_value="Thai">8b495a179791021069a3b6fce053afd0</cuisine>
+        <diet>bca1c6979711021069a3b6fce053af90</diet>
+        <effort display_value="Easy">fae0a76e9730021069a3b6fce053af3e</effort>
+        <image/>
+        <ingredients>Sticky Rice (1 cup, soaked), Mangoes (2,</ingredients>
+        <meal_type/>
+        <name>Mango Sticky Rice</name>
+        <nutrition>Calories: 350, Protein: 5g, Fat: 20g, Carbs: 40g</nutrition>
+        <owned_by/>
+        <pre_cook>false</pre_cook>
+        <prep_instructions>1. Soak sticky rice. 2. Slice ripe mangoes.</prep_instructions>
+        <prep_required>false</prep_required>
+        <prep_time/>
+        <serving>2</serving>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 01:22:04</sys_created_on>
+        <sys_id>3c91d71f9795021069a3b6fce053afe5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-07 01:22:04</sys_updated_on>
+        <time_of_day/>
+    </x_62500_mealplan_recipe>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-07 01:24:47</sys_created_on>
+        <sys_id>a832d35f9795021069a3b6fce053af97</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Mango Sticky Rice</sys_name>
+        <sys_package display_value="Meal Planner" source="x_62500_mealplan">b64f09f19734021069a3b6fce053af1a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Meal Planner">b64f09f19734021069a3b6fce053af1a</sys_scope>
+        <sys_update_name>sys_metadata_link_a832d35f9795021069a3b6fce053af97</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-07 01:24:47</sys_updated_on>
+        <tablename>x_62500_mealplan_recipe</tablename>
+    </sys_metadata_link>
+</record_update>
