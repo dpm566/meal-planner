@@ -1,6 +1,6 @@
 # Meal Planner
 
-
+Was imported from gitlab source. Not needed
 
 ## Getting started
 
